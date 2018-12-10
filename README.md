@@ -9,7 +9,7 @@
 # `react-native-template-vidatec`
 
 ```
-react-native init NewApp --template=https://github.com/Vidatec/react-native-template-vidatec && cd NewApp && node ./setup.js
+react-native init NewApp --template=vidatec && cd NewApp && node ./setup.js
 ```
 
 Instructions in `app/*` directories.
