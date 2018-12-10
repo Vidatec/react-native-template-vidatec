@@ -4,6 +4,7 @@
   "react": "16.6.1",
   "react-native": "0.57.7",
   "react-native-fs": "^2.10.14",
+  "react-native-gesture-handler": "^1.0.9",
   "react-navigation": "^3.0.0",
   "react-redux": "^5.0.6",
   "redux": "^3.7.2",
