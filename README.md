@@ -1,15 +1,15 @@
-[![npm version](https://badge.fury.io/js/react-native-template-vidatec.svg)](https://badge.fury.io/js/react-native-template-vidatec)
-[![npm downloads](https://img.shields.io/npm/dt/react-native-template-vidatec.svg)](https://www.npmjs.com/package/react-native-template-vidatec)
+[![npm version](https://badge.fury.io/js/@vidatec/react-native-template-vidatec.svg)](https://badge.fury.io/js/@vidatec/react-native-template-vidatec)
+[![npm downloads](https://img.shields.io/npm/dt/@vidatec/react-native-template-vidatec.svg)](https://www.npmjs.com/package/@vidatec/react-native-template-vidatec)
 ![](https://img.shields.io/github/issues-raw/vidatec/react-native-template-vidatec.svg)
 ![](https://img.shields.io/github/last-commit/vidatec/react-native-template-vidatec.svg)
 ![](https://img.shields.io/github/languages/top/vidatec/react-native-template-vidatec.svg)
-![](https://img.shields.io/npm/l/react-native-template-vidatec.svg)
+![](https://img.shields.io/npm/l/@vidatec/react-native-template-vidatec.svg)
 
 
 # `react-native-template-vidatec`
 
 ```
-react-native init NewApp --template vidatec && cd NewApp && node ./setup.js
+react-native init NewApp --template=https://github.com/Vidatec/react-native-template-vidatec && cd NewApp && node ./setup.js
 ```
 
 Instructions in `app/*` directories.
@@ -92,4 +92,4 @@ A sample working test exists so run `npm run test` to see it in action.
 
 # Thanks
 
-Many thank to jordand who inspired this template. This template borrows from the jordand [template](https://github.com/JordanDuncan/react-native-template-jordand). 
+Built on top of Andrew M + Jordan D's templates.
