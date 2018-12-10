@@ -1,0 +1,15 @@
+{
+  "name": "@vidatec/react-native-template-vidatec",
+  "version": "1.0.0",
+  "repository": "github:vidatec/react-native-template-vidatec",
+  "keywords": [
+    "react-native",
+    "template",
+    "vidatec"
+  ],
+  "author": "Vidatec",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vidatec/react-native-template-vidatec/issues"
+  }
+}
