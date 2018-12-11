@@ -48,19 +48,19 @@ Save and reload your app to see the storybook view of the components.
 
 ## Filament support
 
-This repository supports Filament CLI when using the `filament-jordandrn` and the `filament-andrewmrn` package. Currently this repository is set to use `filament-andrewmrn`.
+This repository supports Filament CLI when using the `filament-rnvidatec` package. Currently this repository is set to use `filament-rnvidatec`.
 
 ### Steps to install
 1. Install `filament` globally with `npm i -g filamentcli`
 
    Steps 2 & 3 are handled by the template setup and the `setup.js`.
 
-2. Install `filament-andrewmrn` in the project with `npm i filament-andrewmrn`
+2. Install `filament-rnvidatec` in the project with `npm i @vidatec/filament-rnvidatec`
 3. Link the package to your project by modifying `package.json` and adding the following to the top level of the file:
   ```
   "config": {
     "filament": {
-      "package": "filament-andrewmrn"
+      "package": "@vidatec/filament-rnvidatec"
     }
   }
   ```

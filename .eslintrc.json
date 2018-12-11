@@ -3,7 +3,10 @@
       "browser": true,
       "commonjs": true,
       "es6": true,
-      "node": true
+      "node": true,
+      "jest": true,
+      "detox/detox": true,
+      "jasmine": true
   },
   "extends": "eslint-config-semistandard",
   "parser": "babel-eslint",
@@ -16,7 +19,8 @@
   },
   "plugins": [
       "react",
-      "flowtype"
+      "flowtype",
+      "detox"
   ],
   "rules": {
       "indent": [
