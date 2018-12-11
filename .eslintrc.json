@@ -5,7 +5,8 @@
       "es6": true,
       "node": true,
       "jest": true,
-      "detox/detox": true
+      "detox/detox": true,
+      "jasmine":true
   },
   "extends": "eslint-config-semistandard",
   "parser": "babel-eslint",
