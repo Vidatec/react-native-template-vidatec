@@ -26,7 +26,7 @@ function shuffleArray (array: any[]): any[] {
   return array;
 }
 
-export function updateTime (): Action {
+export function updateTime () {
   // get a timestamp and pass it to the reducer
   return {
     type: UPDATE_TIME,
@@ -34,7 +34,7 @@ export function updateTime (): Action {
   };
 }
 
-export function updateTimeAsync (delay: number = 2000): ThunkAction {
+export function updateTimeAsync (delay: number = 2000) {
   return dispatch => {
     setTimeout(() => {
       dispatch(updateTime());
@@ -42,7 +42,7 @@ export function updateTimeAsync (delay: number = 2000): ThunkAction {
   };
 }
 
-export function updatePeople (): ThunkAction {
+export function updatePeople () {
   return async dispatch => {
     const response = await People.getList();
     if (response.ok) {
@@ -54,7 +54,7 @@ export function updatePeople (): ThunkAction {
   };
 }
 
-export default function TestDataReducer (state = initialState, action: Action): State {
+export default function TestDataReducer (state = initialState, action) {
   switch (action.type) {
   case UPDATE_TIME:
     return {
