@@ -16,7 +16,7 @@ export default class Stack extends Component {
     BackHandler.addEventListener('hardwareBackPress', this.backAction);
   }
 
-  backAction = () => this.navigator.props.navigation.goBack();
+  backAction = () => MainStackGlobal.goBack();
 
   render () {
     return (
