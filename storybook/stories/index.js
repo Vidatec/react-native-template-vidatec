@@ -9,9 +9,8 @@ import Button from './Button';
 import CenterView from './CenterView';
 import Welcome from './Welcome';
 
-import FancyText from 'app/components/FancyText/stories';
-
 // DO NOT MOVE COMMENT
+import 'app/components/FancyText/stories';
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 

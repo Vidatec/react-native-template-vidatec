@@ -5,7 +5,6 @@
  */
 
 import * as People from 'app/network/People';
-import { ThunkAction } from 'redux-thunk';
 
 const initialState = {
   timestamp: 0,
