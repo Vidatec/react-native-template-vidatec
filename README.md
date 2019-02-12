@@ -1,9 +1,9 @@
-[![npm version](https://badge.fury.io/js/@vidatec/react-native-template-vidatec.svg)](https://badge.fury.io/js/@vidatec/react-native-template-vidatec)
-[![npm downloads](https://img.shields.io/npm/dt/@vidatec/react-native-template-vidatec.svg)](https://www.npmjs.com/package/@vidatec/react-native-template-vidatec)
+[![npm version](https://badge.fury.io/js/react-native-template-vidatec.svg)](https://badge.fury.io/js/react-native-template-vidatec)
+[![npm downloads](https://img.shields.io/npm/dt/react-native-template-vidatec.svg)](https://www.npmjs.com/package/react-native-template-vidatec)
 ![](https://img.shields.io/github/issues-raw/vidatec/react-native-template-vidatec.svg)
 ![](https://img.shields.io/github/last-commit/vidatec/react-native-template-vidatec.svg)
 ![](https://img.shields.io/github/languages/top/vidatec/react-native-template-vidatec.svg)
-![](https://img.shields.io/npm/l/@vidatec/react-native-template-vidatec.svg)
+![](https://img.shields.io/npm/l/react-native-template-vidatec.svg)
 
 
 # `react-native-template-vidatec`
