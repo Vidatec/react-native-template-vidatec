@@ -48,29 +48,14 @@ Save and reload your app to see the storybook view of the components.
 
 ## Filament support
 
-This repository supports Filament CLI when using the `filament-rnvidatec` package. Currently this repository is set to use `filament-rnvidatec`.
+This repository supports Filament CLI when using the `filament-rnvidatec` package. Currently this repository is set to use `filament-rnvidatec`. The template installs the CLI and the package, and the `setup.js` script links it in the `package.json` file.
 
-### Steps to install
-1. Install `filament` globally with `npm i -g filamentcli`
+You'll be able to use filament commands to generate screens, components, network  and redux controllers:
 
-   Steps 2 & 3 are handled by the template setup and the `setup.js`.
-
-2. Install `filament-rnvidatec` in the project with `npm i @vidatec/filament-rnvidatec`
-3. Link the package to your project by modifying `package.json` and adding the following to the top level of the file:
-  ```
-  "config": {
-    "filament": {
-      "package": "@vidatec/filament-rnvidatec"
-    }
-  }
-  ```
-
-You'll now be able to use filament commands to generate screens, components, network  and redux controllers:
-
-- `filament new component <componentName>`
-- `filament new screen <screenName>`
-- `filament new network <networkControllerName>`
-- `filament new redux <reduxName>`
+- `npx filament new component <componentName>`
+- `npx filament new screen <screenName>`
+- `npx filament new network <networkControllerName>`
+- `npx filament new redux <reduxName>`
 
 # Testing and Linting
 
