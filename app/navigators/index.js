@@ -8,6 +8,12 @@ import { InitialScreen as MainTabsInitialScreen } from 'app/navigators/MainTabs/
 class Navigator {
   constructor () {
     this.nav = null;
+    this.observer = null;
+    this.queuedActions = [];
+  }
+
+  setObserver (observer) {
+    this.observer = observer;
   }
 
   /**
@@ -16,6 +22,27 @@ class Navigator {
    */
   setNavigator (navigator) {
     this.nav = navigator;
+
+    // now that we have a navigator, perform any actions that were queued
+    if (this.nav && this.queuedActions.length > 0) {
+      while (this.queuedActions.length > 0) {
+        this.nav.dispatch(this.queuedActions[0]);
+        this.queuedActions.shift();
+      }
+    }
+  }
+
+  /**
+   * Dispatch an action on the navigator
+   * @param {NavigationAction} action action to run on the navigator
+   */
+  action (action) {
+    if (this.nav) {
+      this.nav.dispatch(action);
+    } else {
+      // if no navigator, queue the action for when its set
+      this.queuedActions.push(action);
+    }
   }
 
   /**
@@ -24,40 +51,58 @@ class Navigator {
    * @param {object} params params to pass to new screen
    */
   navigate (routeName, params) {
-    this.nav.dispatch(
-      NavigationActions.navigate({
-        routeName,
-        params
-      })
-    );
+    this.action(NavigationActions.navigate({
+      routeName,
+      params
+    }));
   }
 }
 
 class StackNav extends Navigator {
   /**
+   * Push a screen onto the navigator, even if it already exists on the stack
+   * @param {string} routeName screen to open
+   * @param {object} params params to pass to new screen
+   */
+  push (routeName, params) {
+    this.action(StackActions.push({
+      routeName,
+      params
+    }));
+  }
+
+  /**
    * Go back to previous screen
    */
   goBack () {
-    this.nav.dispatch(
-      StackActions.pop()
-    );
+    this.action(StackActions.pop({
+      routeName,
+      params
+    }));
   }
 
+  /**
+   * Go back to root of navigator
+   */
   goBackToRoot () {
-    this.nav.dispatch(
-      StackActions.popToTop()
-    );
+    this.action(StackActions.popToTop({
+      routeName,
+      params
+    }));
   }
 }
 
 class TabNav extends Navigator {
+  /**
+   * Switch to tab
+   * @param {string} routeName tab to open
+   * @param {object} params params to pass to tab
+   */
   goToTab (routeName, params) {
-    this.nav.dispatch(
-      NavigationActions.navigate({
-        routeName,
-        params
-      })
-    );
+    this.action(NavigationActions.navigate({
+      routeName,
+      params
+    }));
   }
 }
 
