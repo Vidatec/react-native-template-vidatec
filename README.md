@@ -21,7 +21,7 @@ Make sure you have detox, storybook and filament-cli on your machine. If you hav
 Run `node setup.js` this will update the `package.json` so that it has the required updated scripts and values for the following dependencies.
 
 ## Detox
-Detox should be set up on your machine see [Detox - Getting Started](https://github.com/wix/Detox/blob/master/docs/Introduction.GettingStarted.md) for more details on how to install it. At time of writing you will only need to do step one as the `setup.js` and the inital template setup take care of the remaining steps.
+Detox should be set up on your machine see [Detox - Getting Started](https://github.com/wix/Detox/blob/master/docs/Introduction.GettingStarted.md) for more details on how to install it. At time of writing you will only need to do step one for iOS as the `setup.js` and the inital template setup take care of the remaining steps. Setting up for Android has become more involved. You will need to follow the detailed steps that are outlined [here](https://github.com/wix/Detox/blob/master/docs/Introduction.Android.md).
 
 To run detox:
 
