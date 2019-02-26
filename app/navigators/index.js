@@ -75,20 +75,14 @@ class StackNav extends Navigator {
    * Go back to previous screen
    */
   goBack () {
-    this.action(StackActions.pop({
-      routeName,
-      params
-    }));
+    this.action(StackActions.pop());
   }
 
   /**
    * Go back to root of navigator
    */
   goBackToRoot () {
-    this.action(StackActions.popToTop({
-      routeName,
-      params
-    }));
+    this.action(StackActions.popToTop());
   }
 }
 
