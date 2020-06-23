@@ -3,5 +3,15 @@
     "name": "react-native-template-vidatec",
     "version": "2.0.0",
     "description": "React Native Vidatec Template",
-    "license": "MIT"
+    "license": "MIT",
+    "repository": "github:vidatec/react-native-template-vidatec",
+    "keywords": [
+      "react-native",
+      "template",
+      "vidatec"
+    ],
+    "author": "Vidatec",
+    "bugs": {
+      "url": "https://github.com/vidatec/react-native-template-vidatec/issues"
+    }
   }
