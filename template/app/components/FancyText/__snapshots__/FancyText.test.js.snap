@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with no props 1`] = `
+<Text
+  style={
+    Object {
+      "color": "#FF0000",
+      "fontSize": 20,
+      "textAlign": "center",
+    }
+  }
+/>
+`;

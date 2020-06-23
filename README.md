@@ -9,40 +9,21 @@
 # `react-native-template-vidatec`
 
 ```
-react-native init NewApp --template=vidatec && cd NewApp && node ./setup.js
+npx react-native init NewApp --template=vidatec && cd NewApp
 ```
 
 Instructions in `app/*` directories.
-
-# Finishing Setup
-Make sure you have detox, storybook and filament-cli on your machine. If you have these already then you can run `setup.js`.
-
-## setup.js
-Run `node setup.js` this will update the `package.json` so that it has the required updated scripts and values for the following dependencies.
-
-## Detox
-Detox should be set up on your machine see [Detox - Getting Started](https://github.com/wix/Detox/blob/master/docs/Introduction.GettingStarted.md) for more details on how to install it. At time of writing you will only need to do step one for iOS as the `setup.js` and the inital template setup take care of the remaining steps. Setting up for Android has become more involved. You will need to follow the detailed steps that are outlined [here](https://github.com/wix/Detox/blob/master/docs/Introduction.Android.md).
-
-To run detox:
-
-`npm run detox_ios` 
-
-`npm run detox_android`
-
-Note you must have Genymotion installed to use detox on Android and you may have to update the device name. Once you have run your emulator you can get its device name by running `adb devices`. 
-
-In this template Detox uses Jest. End to end tests are in the `./e2e` folder. A sample working test exists so run one of the above commands to see it in action.
 
 ## Storybook
 This template uses storybook to edit components. 
 
 To use storybook go to `./index.js` and comment out the line 
 
-`import MainAppProvider from './app/index';` 
+`import Root from './app/index';` 
 
 and uncomment 
 
-`import Storybook from './storybook';` 
+`import Root from './storybook';` 
 
 Save and reload your app to see the storybook view of the components. 
 
