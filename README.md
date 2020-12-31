@@ -56,6 +56,10 @@ A sample working test exists so run `npm run test` to see it in action.
 
 `npm run lint` will run the command `eslint *.js ./ --fix`.
 
+## Versioning your app
+
+The template includes `react-native-version`. To update the version of your app, just use `npm version <version>`.
+
 # Thanks
 
 Built on top of Andrew M + Jordan D's templates.

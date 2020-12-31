@@ -5,7 +5,6 @@
       "es6": true,
       "node": true,
       "jest": true,
-      "detox/detox": true,
       "jasmine": true
   },
   "extends": "eslint-config-semistandard",
@@ -19,8 +18,7 @@
   },
   "plugins": [
       "react",
-      "flowtype",
-      "detox"
+      "flowtype"
   ],
   "rules": {
       "indent": [

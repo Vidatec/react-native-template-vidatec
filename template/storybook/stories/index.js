@@ -10,7 +10,7 @@ import CenterView from './CenterView';
 import Welcome from './Welcome';
 
 // DO NOT MOVE COMMENT
-import 'app/components/FancyText/stories';
+import '../../app/components/FancyText/stories';
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 

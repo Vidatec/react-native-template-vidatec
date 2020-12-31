@@ -1,6 +1,6 @@
 {
   "name": "VidatecTemplateApp",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -9,7 +9,9 @@
     "test": "jest --verbose",
     "test:update": "jest -u",
     "test:clear": "jest --clearCache",
-    "lint": "eslint *.js ./ --fix"
+    "lint": "eslint *.js ./ --fix",
+    "postversion": "react-native-version",
+    "postinstall": "patch-package"
   },
   "config": {
     "filament": {
@@ -32,23 +34,26 @@
     ]
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.13.2",
     "@react-native-community/async-storage": "^1.11.0",
     "@react-native-community/masked-view": "^0.1.10",
-    "@react-navigation/bottom-tabs": "^5.5.2",
-    "@react-navigation/native": "^5.5.1",
-    "@react-navigation/stack": "^5.5.1",
+    "@react-navigation/bottom-tabs": "^5.11.2",
+    "@react-navigation/native": "^5.8.10",
+    "@react-navigation/stack": "^5.12.8",
     "@storybook/addon-actions": "^5.3.19",
     "@storybook/addon-links": "^5.3.19",
     "@storybook/react-native": "^5.3.19",
-    "@vidatec/filament-rnvidatec": "^1.1.0",
-    "apisauce": "^1.1.1",
-    "react": "16.11.0",
-    "react-native": "0.62.2",
+    "@vidatec/filament-rnvidatec": "^1.2.3",
+    "apisauce": "^2.0.1",
+    "react": "16.13.1",
+    "react-native": "0.63.4",
+    "react-native-config": "^1.4.1",
+    "react-native-device-info": "^7.3.1",
     "react-native-fs": "^2.16.6",
-    "react-native-gesture-handler": "^1.6.1",
+    "react-native-gesture-handler": "^1.9.0",
     "react-native-reanimated": "^1.9.0",
     "react-native-safe-area-context": "^3.0.6",
-    "react-native-screens": "^2.9.0",
+    "react-native-screens": "^2.16.1",
     "react-redux": "^7.2.0",
     "redux": "^4.0.5",
     "redux-persist": "^6.0.0",
@@ -56,14 +61,18 @@
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.2",
-    "@babel/runtime": "^7.6.2",
-    "@react-native-community/eslint-config": "^0.0.5",
-    "babel-jest": "^24.9.0",
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "babel-jest": "^25.1.0",
     "eslint": "^6.5.1",
+    "eslint-config-semistandard": "^15.0.1",
+    "eslint-plugin-import": "^2.22.1",
     "filamentcli": "0.0.2",
-    "jest": "^24.9.0",
-    "metro-react-native-babel-preset": "^0.58.0",
-    "react-test-renderer": "16.11.0"
+    "jest": "^25.1.0",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "patch-package": "^6.2.2",
+    "react-native-version": "^4.0.0",
+    "react-test-renderer": "16.13.1"
   }
 }
