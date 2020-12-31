@@ -4,7 +4,7 @@
  * A sample Redux file. Roughly follows the Redux Ducks methodology.
  */
 
-import * as People from 'app/network/People';
+import * as People from '../network/People';
 
 const initialState = {
   timestamp: 0,

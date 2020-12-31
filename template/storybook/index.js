@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import {AppRegistry, View} from 'react-native';
+import React from 'react';
+import {View} from 'react-native';
 import {getStorybookUI, configure} from '@storybook/react-native';
 
 import './rn-addons';

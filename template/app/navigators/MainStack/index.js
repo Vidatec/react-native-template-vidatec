@@ -5,8 +5,8 @@
 import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 
-import Detail from 'app/screens/Detail';
-import MainTabs from 'app/navigators/MainTabs';
+import Detail from '../../screens/Detail';
+import MainTabs from '../../navigators/MainTabs';
 
 const Stack = createStackNavigator();
 

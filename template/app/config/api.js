@@ -6,7 +6,8 @@
  */
 
 import { create } from 'apisauce';
+import { getAPIUrl } from './config';
 
 export const TestAPI = create({
-  baseURL: 'https://jsonplaceholder.typicode.com'
+  baseURL: getAPIUrl()
 });

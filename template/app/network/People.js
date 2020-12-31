@@ -1,4 +1,4 @@
-import { TestAPI } from 'app/config/api';
+import { TestAPI } from '../config/api';
 
 export async function getList () {
   let response = await TestAPI.get('/users');

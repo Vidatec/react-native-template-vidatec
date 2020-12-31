@@ -4,7 +4,7 @@
 
 import { StyleSheet } from 'react-native';
 
-import { colors, sizes } from 'app/config/styles';
+import { colors, sizes } from '../../config/styles';
 
 export default StyleSheet.create({
   text: {

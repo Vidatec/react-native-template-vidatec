@@ -1,1 +1,1 @@
-export const CELLPHONE = require('app/assets/images/cellphone.png');
+export const CELLPHONE = require('../assets/images/cellphone.png');
